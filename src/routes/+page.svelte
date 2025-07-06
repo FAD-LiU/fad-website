@@ -94,7 +94,7 @@
 
       <p>
         Har du frågor eller vill du veta mer om oss? Tveka inte att <a
-          href="mailto:info@fadderportalen.se">kontakta oss</a
+          href="mailto:info@fadportalen.se">kontakta oss</a
         >!
       </p>
     </section>

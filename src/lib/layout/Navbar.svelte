@@ -41,7 +41,7 @@
       ></div>
       <a
         class="bg-fad-green rounded-sm px-4 py-[1px] text-black no-underline"
-        href="mailto:info@fadderportalen.se">Kontakt</a
+        href="mailto:info@fadportalen.se">Kontakt</a
       >
     </div>
   </div>

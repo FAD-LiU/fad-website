@@ -13,7 +13,7 @@ Sverige`;
     <div>
       <h2 class="mb-4 text-lg font-bold">Kontakt</h2>
       <pre class="mb-4">{contactInfo}</pre>
-      <p>Email: <a href="mailto:info@fadderportalen.se">info@fadderportalen.se</a></p>
+      <p>Email: <a href="mailto:info@fadportalen.se">info@fadportalen.se</a></p>
     </div>
 
     <!-- Dummy for col alignment -->
