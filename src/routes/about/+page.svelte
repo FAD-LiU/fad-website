@@ -1,5 +1,10 @@
 <script lang="ts"></script>
 
+<svelte:head>
+  <title>Om oss - FAD</title>
+  <meta name="description" content="Information om FAD och dess styrelse." />
+</svelte:head>
+
 {#snippet medlem(name: string, role: string, image: string)}
   <div class="flex flex-col items-center">
     <img src={image} alt={name} class="h-32 w-32 rounded-full" />
