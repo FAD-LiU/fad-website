@@ -19,6 +19,10 @@ const config = {
     prerender: {
       entries: ["*", "/404"],
     },
+    paths: {
+      base: "",
+      assets: "",
+    },
   },
 };
 
