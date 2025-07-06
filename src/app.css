@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@theme {
+  /* Sane black and white */
+  --color-fad-white: lch(94.32% 2.81 262.64);
+  --color-fad-black: lch(21.51% 8.46 268.63);
+
+  /* Whiter white for extra ✨pop✨ */
+  --color-fad-white-pop: lch(98.32% 2.81 262.64);
+
+  --color-fad-green: lch(58.55% 35.57 202.96);
+}
+
+@layer base {
+  body {
+    @apply bg-fad-white text-fad-black;
+  }
+
+  a {
+    @apply underline;
+  }
+}
+
+@layer components {
+  .navbar-default {
+    @apply absolute top-2 h-16;
+  }
+
+  .navbar-scrolled {
+    @apply bg-fad-black fixed top-0 left-0 h-12 shadow-2xl;
+  }
+
+  .glasses-border {
+    border-image-source: url("/assets/glasses.svg");
+    border-image-slice: 25%;
+    border-image-repeat: round;
+    border-image-width: 150px;
+  }
+
+  /* punish user for having small screen */
+  @media (max-width: 64rem) {
+    .glasses-border {
+      border-image-source: unset;
+    }
+  }
+}

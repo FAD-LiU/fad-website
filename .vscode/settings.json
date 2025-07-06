@@ -1,0 +1,13 @@
+{
+  "cSpell.language": "sv,en",
+  "editor.formatOnSave": true,
+
+  "prettier.singleQuote": false,
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  }
+}
