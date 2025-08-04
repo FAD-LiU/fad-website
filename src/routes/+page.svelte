@@ -45,7 +45,7 @@
   <div class="mx-auto max-w-5xl px-2">
     <!-- Mission -->
     <div
-      class={`glasses-border mx-auto grid grid-cols-1 sm:px-20 lg:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] ${mt}`}
+      class={`glasses-border mx-auto grid grid-cols-1 py-12 sm:px-20 lg:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] ${mt}`}
     >
       <section class="prose prose-sm sm:prose-base px-2 lg:py-12">
         <h1>För Fadderister, av fadderister</h1>
