@@ -10,7 +10,7 @@
 <!-- Bin scroll state to window scroll -->
 <svelte:window bind:scrollY />
 
-{#snippet navLink(href: string, text: String)}
+{#snippet navLink(href: string, text: string)}
   <li class="min-w-fit text-center text-sm">
     <a class="no-underline hover:underline" {href}>{text}</a>
   </li>

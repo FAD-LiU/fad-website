@@ -5,9 +5,14 @@
   <meta name="description" content="Information om FAD och dess styrelse." />
 </svelte:head>
 
-{#snippet medlem(name: string, role: string, image: string)}
+{#snippet medlem(name: string, role: string, image: string, position: string = "center")}
   <div class="flex flex-col items-center">
-    <img src={image} alt={name} class="h-32 w-32 rounded-full" />
+    <img
+      src={image}
+      alt={name}
+      class="h-36 w-36 rounded-full border-3 border-white object-cover shadow-xl transition-transform duration-300"
+      style="object-position: {position}; "
+    />
     <h2 class="mt-0 text-lg font-semibold">{name}</h2>
     <p class="text-sm text-gray-500">{role}</p>
   </div>
@@ -17,19 +22,9 @@
   <section class="prose prose-base mx-auto mt-20 px-2">
     <h1 class="text-center">FADs styrelse</h1>
     <div class="grid grid-cols-2">
-      {@render medlem("Tobias Elfstrand", "Ordförande", "https://robohash.org/Tobias_Elfstrand")}
-      {@render medlem("Fredrik Eriksson", "Kassör", "https://robohash.org/Fredrik_Eriksson")}
-      {@render medlem("Emma Lundvall", "Styrelseledamot", "https://robohash.org/Emma_Lundvall")}
-      {@render medlem(
-        "Andreas Blomqvist",
-        "Styrelseledamot",
-        "https://robohash.org/Andreas_Blomqvist",
-      )}
-      {@render medlem(
-        "Oskar Arensmeier",
-        "Styrelseledamot",
-        "https://robohash.org/Oskar_Arensmeier",
-      )}
+      {@render medlem("Karin Trakell", "Ordförande", "/assets/about/Karin.jpg", "center 20%")}
+      {@render medlem("William Minidis", "Kassör", "/assets/about/Minidis.jpg", "center 10%")}
+      {@render medlem("Alma Ranefall", "Styrelseledamot", "/assets/about/Alma.png", "center 30%")}
     </div>
   </section>
 </main>

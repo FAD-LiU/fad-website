@@ -20,7 +20,7 @@
   <meta name="description" content="Övergripande information om vad gör FAD" />
 </svelte:head>
 
-{#snippet whatWeDoItem(name: String, text: String)}
+{#snippet whatWeDoItem(name: string, text: string)}
   <li class="bg-fad-white-pop rounded-lg">
     <h2>{name}</h2>
     <p>{text}</p>
@@ -30,7 +30,7 @@
 <main class="overflow-y-scroll">
   <!-- Hero -->
   <div
-    class="hero border-fad-black h-[60vh] border-b-1 bg-[url(/assets/staben.jpg)] bg-cover bg-center"
+    class="hero border-fad-black h-[60vh] border-b-1 bg-[url(/assets/fadderister/megaguckel-2025.jpg)] bg-cover bg-center"
   >
     <div
       class="prose prose-invert prose:text-fad-white flex h-full w-full max-w-full flex-col items-center justify-center text-center backdrop-blur-[4px] backdrop-brightness-[0.8]"
