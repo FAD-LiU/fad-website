@@ -26,7 +26,6 @@ export default ts.config(
       "no-undef": "off",
       // Enforce double quotes
       quotes: ["error", "double", { avoidEscape: true }],
-      "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
     },
   },
   {
