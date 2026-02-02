@@ -33,12 +33,12 @@
     class="hero border-fad-black h-[60vh] border-b-1 bg-[url(/assets/fadderister/megaguckel-2025.jpg)] bg-cover bg-center"
   >
     <div
-      class="prose prose-invert prose:text-fad-white flex h-full w-full max-w-full flex-col items-center justify-center text-center backdrop-blur-[4px] backdrop-brightness-[0.8]"
+      class="prose prose-invert prose:text-fad-white-pop flex h-full w-full max-w-full flex-col items-center justify-center text-center backdrop-blur-[4px] backdrop-brightness-[0.8]"
     >
-      <h1 class="mb-0 text-6xl">
+      <h1 class="mb-0 text-7xl">
         <span>F</span><span>A</span><span>D</span>
       </h1>
-      <p class="mt-2">För en bättre mottagning</p>
+      <p class="mt-2 text-xl">För en bättre mottagning</p>
     </div>
   </div>
 

@@ -11,7 +11,7 @@
 <svelte:window bind:scrollY />
 
 {#snippet navLink(href: string, text: string)}
-  <li class="min-w-fit text-center text-sm">
+  <li class="text-md min-w-fit text-center">
     <a class="no-underline hover:underline" {href}>{text}</a>
   </li>
 {/snippet}
