@@ -20,8 +20,8 @@ Sverige`;
     <div>
       <h2 class="mb-4 text-lg font-bold">Följ oss</h2>
       <ul>
+        <li><a href="https://www.instagram.com/fad_liu/">Instagram</a></li>
         <li><a href="404.html">Facebook</a> &lpar;WIP&rpar;</li>
-        <li><a href="404.html">Instagram</a> &lpar;WIP&rpar;</li>
         <li><a href="404.html">LinkedIn</a> &lpar;WIP&rpar;</li>
       </ul>
     </div>
