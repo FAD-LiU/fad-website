@@ -59,19 +59,53 @@
           </g>
         </g>
       </g>
-      <g>
+
+      <g class="mustache-wrapper">
         <path
           d="M928.75,399.600996C928.75,399.600996 897.793099,430.449481 847.684122,439.944019 C812.728859,446.567266 779.742903,442.654875 745,429.850433 C716.977301,419.522713 706.779662,384.061155 706.779662,384.061155 C706.779662,384.061155 733.769585,407.072331 760.545136,408.580575 C789.389359,410.205346 794.29016,404.093415 828.195102,394.105255 C876.566756,379.855302 867.5,359.5 928.75,372.5 C990,359.5 980.933244,379.855302 1029.304898,394.105255 C1063.20984,404.093415 1068.110641,410.205346 1096.954864,408.580575 C1123.730415,407.072331 1150.720338,384.061155 1150.720338,384.061155 C1150.720338,384.061155 1140.522699,419.522713 1112.5,429.850433 C1077.757097,442.654875 1044.771141,446.567266 1009.815878,439.944019 C959.706901,430.449481 928.75,399.600996 928.75,399.600996 L 928.75,399.600996 Z"
           transform="matrix(1,0,0,1,0,30)"
           fill="#000000"
         />
       </g>
+
       <g>
         <path
           d="M678.75,187.809912L 1178.75,187.809912 L 1178.75,687.809912 L 678.75,687.809912 L 678.75,187.809912 Z"
           fill="none"
         />
       </g>
-    </g></g
-  ></svg
->
+    </g>
+  </g>
+</svg>
+
+<style>
+  /* Target the wrapper around the mustache */
+  .mustache-wrapper {
+    /* Base the transform exactly on the boundaries of the mustache path */
+    transform-box: fill-box;
+    /* Pivot from the top center (under the nose) */
+    transform-origin: center top;
+  }
+
+  /* When the overall SVG is hovered, animate the mustache */
+  svg:hover .mustache-wrapper {
+    animation: wiggle 0.6s ease-in-out infinite;
+  }
+
+  /* The wiggle animation keyframes */
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(4deg);
+    }
+    75% {
+      transform: rotate(-4deg);
+    }
+  }
+</style>
