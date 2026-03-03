@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import Image from "$lib/components/Image.svelte";
+</script>
 
 <svelte:head>
   <title>Om oss - FAD</title>
@@ -7,7 +9,7 @@
 
 {#snippet medlem(name: string, role: string, image: string, position: string = "center")}
   <div class="flex flex-col items-center">
-    <img
+    <Image
       src={image}
       alt={name}
       class="h-36 w-36 rounded-full border-3 border-white object-cover shadow-xl transition-transform duration-300"

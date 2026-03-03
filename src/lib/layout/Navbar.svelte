@@ -1,5 +1,8 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
+  import { CONTACT_EMAIL } from "$lib/constants";
+  import Link from "$lib/components/Link.svelte";
+  import Image from "$lib/components/Image.svelte";
 
   let scrollY = $state(0);
 
@@ -39,9 +42,9 @@
         class="divider-horizontal"
         style="height: 1rem; width: 2px; background-color: var(--color-fad-white);"
       ></div>
-      <a
-        class="bg-fad-green rounded-sm px-4 py-[1px] text-black no-underline"
-        href="mailto:info@fadportalen.se">Kontakt</a
+      <Link
+        class="bg-fad-green rounded-sm border-transparent px-4 py-[1px] text-black no-underline transition hover:ring-2"
+        href="mailto:{CONTACT_EMAIL}">Kontakt</Link
       >
     </div>
   </div>
