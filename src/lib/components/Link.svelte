@@ -2,7 +2,7 @@
   // 'href' is required, so we don't give it a default value
   export let href;
 
-  $: isExternal = /^[a-z][a-z\d+\-.]*:\/\//i.test(href);
+  $: isExternal = /^(?:[a-z][a-z\d+\-.]*:\/\/|mailto:)/i.test(href);
 </script>
 
 <a
