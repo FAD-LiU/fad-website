@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { CONTACT_EMAIL } from "$lib/constants";
+
   import Link from "$lib/components/Link.svelte";
   import BeardGlasses from "$lib/icons/BeardGlasses.svelte";
 
@@ -62,7 +64,7 @@
         </p>
         <p>
           Vårt mål? En mottagning där både fadderister och nya studenter får den bästa möjliga
-          upplevelsen.
+          upplevelsen!
         </p>
       </section>
       <div class="flex items-center justify-center">
@@ -75,16 +77,29 @@
       <h1>Vad vi gör</h1>
       <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
         {@render whatWeDoItem(
+          "Fadderistutbildningar",
+          "Vi samordnar och planerar postspecifika utbildningar för fadderister på LiU. Har du varit fadderist och vill hjälpa till? Tveka inte med att höra av dig till oss!",
+        )}
+        {@render whatWeDoItem(
           "Fadderjobbsportal",
           "Vi erbjuder en platform för fadderier att hantera fadderjobbare och arbetspass under Nolle-P.",
         )}
         {@render whatWeDoItem(
-          "Fadderportal",
-          "Vi utvecklar en platform för att underlätta informationsspridning mellan fadderister och faddrar.",
-        )}
-        {@render whatWeDoItem(
           "Kunskapsbank",
           "Vi bygger ut en kunskapsbank för att undvika att generationskunskap går förlorad.",
+        )}
+      </ul>
+    </section>
+    <section class={`max-w-none ${proseStyles} ${mt}`}>
+      <h1>Vår framtid</h1>
+      <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
+        {@render whatWeDoItem(
+          "Fadderportal",
+          "Vi arbetar mot att utveckla en platform för att underlätta informationsspridning mellan fadderister och faddrar. Denna är tänkt att fungera tillsammans med fadderjobbsportalen.",
+        )}
+        {@render whatWeDoItem(
+          "Bokningar",
+          "Vi arbetar mot att hjälpa till med bokningar som behövs under mottagningen.",
         )}
       </ul>
     </section>
@@ -99,8 +114,8 @@
       </p>
 
       <p>
-        Har du frågor eller vill du veta mer om oss? Tveka inte att <a
-          href="mailto:info@fadportalen.se">kontakta oss</a
+        Har du frågor eller vill du veta mer om oss? Tveka inte att <a href="mailto:{CONTACT_EMAIL}"
+          >kontakta oss</a
         >!
       </p>
     </section>
