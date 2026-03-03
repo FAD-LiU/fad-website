@@ -11,18 +11,18 @@ Sverige`;
 
 <footer class="bg-fad-black text-fad-white mt-16 text-sm font-light">
   <div
-    class="mx-auto grid max-w-[320px] grid-cols-1 gap-y-12 px-4 pt-10 md:max-w-[1000px] md:grid-cols-4"
+    class="text-md mx-auto grid max-w-[320px] grid-cols-1 gap-y-12 px-4 pt-10 md:max-w-[1000px] md:grid-cols-4"
   >
     <!-- Contact -->
     <div class="md:col-span-2">
-      <h2 class="mb-4 text-lg font-bold">Kontakt</h2>
+      <h2 class="mb-4 text-xl font-bold">Kontakt</h2>
       <pre class="mb-4">{contactInfo}</pre>
       <p>Email: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></p>
     </div>
 
     <!-- Socials -->
     <div>
-      <h2 class="mb-4 text-lg font-bold">Följ oss</h2>
+      <h2 class="mb-4 text-xl font-bold">Följ oss</h2>
       <ul>
         <li>
           <Link href="https://instagram.com/fad_liu/">Instagram</Link>
@@ -36,7 +36,7 @@ Sverige`;
 
     <!-- Documents -->
     <div>
-      <h2 class="mb-4 text-lg font-bold">Dokument</h2>
+      <h2 class="mb-4 text-xl font-bold">Dokument</h2>
       <ul>
         <li><a href="/documents/Stadgar.pdf">Stadgar</a></li>
         <!-- TODO: Skapa datahanteringspolicy -->

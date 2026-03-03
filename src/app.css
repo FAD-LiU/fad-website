@@ -20,15 +20,20 @@
   a {
     @apply underline;
   }
+
+  a:hover {
+    @apply text-fad-green;
+  }
 }
 
 @layer components {
   .navbar-default {
-    @apply absolute top-2 h-16;
+    @apply fixed top-4 h-16;
   }
 
+  /* Only use the scrolled class for the visual changes (background, height, shadow) */
   .navbar-scrolled {
-    @apply bg-fad-black fixed top-0 left-0 h-12 shadow-2xl;
+    @apply bg-fad-black fixed top-0 left-0 h-14 shadow-2xl;
   }
 
   .glasses-border {
