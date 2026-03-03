@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Link from "$lib/components/Link.svelte";
   import BeardGlasses from "$lib/icons/BeardGlasses.svelte";
 
   // Control margin between "sections".
@@ -47,12 +48,17 @@
     <div
       class={`glasses-border mx-auto grid grid-cols-1 py-12 sm:px-20 lg:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] ${mt}`}
     >
-      <section class="prose prose-sm sm:prose-base px-2 lg:py-12">
+      <section
+        class="prose prose-sm sm:prose-base prose-a:text-inherit prose-a:font-normal px-2 lg:py-12"
+      >
         <h1>För Fadderister, av fadderister</h1>
         <p>
-          FAD är sammarbetsorganisationen för fadderister vid Linköpings universitet. Vi arbetar för
-          att göra mottagningen enklare och roligare! Genom att tillhandahålla verktyg, utbildning
-          och stöd för mottagningsarrangörer, vill vi göra det lättare att vara fadderist.
+          FAD är sammarbetsorganisationen för fadderister vid <Link
+            href="https://liu.se/"
+            class="no-underline hover:underline">Linköpings universitet</Link
+          >. Vi arbetar för att göra mottagningen enklare och roligare! Genom att tillhandahålla
+          verktyg, utbildning och stöd för mottagningsarrangörer, vill vi göra det lättare att vara
+          fadderist.
         </p>
         <p>
           Vårt mål? En mottagning där både fadderister och nya studenter får den bästa möjliga
